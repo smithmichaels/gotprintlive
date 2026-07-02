@@ -1,0 +1,114 @@
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(15px);
+
+    flex-direction: column;
+    padding: 80px 20px;
+    transition: 0.4s;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav a {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .nav a:hover {
+    background: #f2f6fa;
+  }
+
+  .cta-btn {
+    display: none;
+  }
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .req .img-small {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 80px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content h3 {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .req .req-content h1 {
+    font-size: 26px;
+  }
+
+  .req .badge {
+    padding: 15px;
+  }
+
+  .req .badge h2 {
+    font-size: 24px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .social-links a {
+    margin: 0 8px;
+  }
+}
